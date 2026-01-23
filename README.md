@@ -2,7 +2,7 @@
 ## Student Information
 - **Name:** John Rio D. Pinatacan
 - **Course:** Bachelor of Science in Information Technology
-- **University:** College of Information Sciences and Computing
+- **University:** Central Mindanao University
 ## Project Description
 This is my first Laravel application created for Activity 1. It's a personal
 portfolio website that demonstrates my understanding of Laravel fundamentals
