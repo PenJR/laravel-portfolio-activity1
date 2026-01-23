@@ -14,16 +14,23 @@
 
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #0f0f0f;
-    color: #e5e5e5;
+    color: #e5e7eb;
     line-height: 1.6;
+    min-height: 100vh;
+
+    /* UNIQUE BACKGROUND */
+    background:
+        radial-gradient(circle at top left, #1f2937 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #020617 0%, transparent 40%),
+        linear-gradient(180deg, #020617, #000000);
 }
 
 /* NAVBAR */
 nav {
-    background: #000000;
-    padding: 1rem 3rem;
-    border-bottom: 1px solid #1f1f1f;
+    padding: 1.2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -33,41 +40,57 @@ nav ul {
 }
 
 nav a {
-    color: #e5e5e5;
+    color: #e5e7eb;
     text-decoration: none;
     font-weight: 600;
     position: relative;
 }
 
-nav a:hover {
-    color: #3b82f6;
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #3b82f6;
+    transition: width 0.3s ease;
 }
 
-/* MAIN CONTAINER */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* MAIN CONTAINER (GLASS EFFECT) */
 .container {
     max-width: 1100px;
-    margin: 3rem auto;
+    margin: 4rem auto;
     padding: 3rem;
-    background: #141414;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 /* HEADINGS */
 h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
     color: #ffffff;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 2rem;
-    background: #000000;
+    padding: 2.5rem 1rem;
     color: #9ca3af;
     font-size: 0.9rem;
-    border-top: 1px solid #1f1f1f;
 }
 </style>
 </head>
