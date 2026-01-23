@@ -5,43 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>@yield('title', 'My Portfolio')</title>
 
-
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-
-
 
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     color: #e5e7eb;
     line-height: 1.6;
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
-
     background:
-    repeating-linear-gradient(
-        45deg,
-        rgba(255,255,255,0.03),
-        rgba(255,255,255,0.03) 1px,
-        transparent 1px,
-        transparent 12px
-    ),
-    linear-gradient(180deg, #020617, #000000);
-
-
-
-
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.03),
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+        linear-gradient(180deg, #020617, #000000);
 }
-
 
 /* NAVBAR */
 nav {
@@ -55,28 +42,9 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 2.5rem;
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
 }
-
 
 nav a {
-    color: #e5e7eb;
-    text-decoration: none;
-    font-weight: 600;
-    position: relative;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: #3b82f6;
-    transition: width 0.3s ease;
     color: #e5e7eb;
     text-decoration: none;
     font-weight: 600;
@@ -98,7 +66,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* WELCOME HEADER (OUTSIDE CONTAINER) */
+/* WELCOME HEADER */
 .hero-title {
     text-align: center;
     margin-top: 3rem;
@@ -114,7 +82,6 @@ nav a:hover::after {
     margin: 3rem auto;
     padding: 2.5rem;
 
-    /* GLASS + TOPOGRAPHIC LINES */
     background:
         repeating-linear-gradient(
             120deg,
@@ -146,11 +113,9 @@ nav a:hover::after {
     justify-content: center;
 }
 
-
-
 /* FOOTER */
 footer {
-    margin-top: auto;   /* MAGIC LINE */
+    margin-top: auto;
     text-align: center;
     padding: 2.5rem 1rem;
     color: #9ca3af;
@@ -158,10 +123,7 @@ footer {
 }
 </style>
 </head>
-
-
 <body>
-
 
 <nav>
     <ul>
@@ -180,16 +142,11 @@ footer {
 
 <div class="container">
     @yield('content')
-    @yield('content')
 </div>
-
 
 <footer>
     <p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
-    <p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
 </footer>
-
 
 </body>
 </html>
-
