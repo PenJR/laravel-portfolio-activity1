@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>@yield('title', 'My Portfolio')</title>
 
+
 <style>
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,9 +55,28 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 2.5rem;
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
 }
 
+
 nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #3b82f6;
+    transition: width 0.3s ease;
     color: #e5e7eb;
     text-decoration: none;
     font-weight: 600;
@@ -136,7 +159,9 @@ footer {
 </style>
 </head>
 
+
 <body>
+
 
 <nav>
     <ul>
@@ -155,11 +180,16 @@ footer {
 
 <div class="container">
     @yield('content')
+    @yield('content')
 </div>
+
 
 <footer>
     <p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
+    <p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
 </footer>
+
 
 </body>
 </html>
+

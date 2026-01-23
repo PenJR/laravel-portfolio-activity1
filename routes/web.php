@@ -16,6 +16,7 @@ Route::get('/about', function () {
 $name = 'John Rio D. Pinatacan'; 
 $course = 'Bachelor of Science in Information Technology';
 $university = 'Central Mindanao University'; 
+$university = 'Central Mindanao University'; 
 return view('about', [
 'name' => $name,
 'course' => $course,

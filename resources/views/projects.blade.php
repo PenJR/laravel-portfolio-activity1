@@ -1,9 +1,18 @@
 @extends('layout')
 
+
 @section('title', 'My Projects')
+
 
 @section('content')
 <h1>My Projects</h1>
+
+<div style="
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+">
 
 <div style="
     margin-top: 2.5rem;
@@ -47,5 +56,7 @@
     </div>
 @endforeach
 
+
 </div>
 @endsection
+
