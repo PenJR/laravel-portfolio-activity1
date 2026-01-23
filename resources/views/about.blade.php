@@ -13,8 +13,7 @@
 <p style="margin-top: 2rem; line-height: 1.8;">
 I am a passionate student learning web development with Laravel.
 I enjoy building web applications and solving problems through code.
-My goal is to become a full-stack developer and create impactful digital
-solutions.
+My goal is to become a game developer and create fun video games in the future.
 </p>
 </div>
 @endsection
