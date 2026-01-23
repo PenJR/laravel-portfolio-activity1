@@ -23,9 +23,9 @@ return view('about', [
 
 Route::get('/projects', function () {
 $projects = [
-['title' => 'Project 1', 'description' => 'My first web project'],
-['title' => 'Project 2', 'description' => 'E-commerce website'],
-['title' => 'Project 3', 'description' => 'Mobile app design'],
+['title' => 'Dormatory Management System', 'description' => 'Web Application for Dormitory Management'],
+['title' => 'PickMeUp', 'description' => 'Mobile App for Motorela-Hailing Service'],
+['title' => 'SpellCode', 'description' => 'Currently Developing Capstone Project'],
 ];
 return view('projects', ['projects' => $projects]);
 })->name('projects');
